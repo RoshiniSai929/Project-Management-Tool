@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PROJECT MANAGEMENT TOOL</h1>
+  </header>
+  <main>
+    <section>
+      <form id="taskForm">
+        <input type="text" id="userNameInput" placeholder="User Name" required>
+        <input type="number" id="taskNumberInput" placeholder="Task Number" required>
+        <input type="text" id="taskDescriptionInput" placeholder="Task Description" required>
+        <button type="submit" id="assignTaskButton">Assign Task</button>
+        <input type="text" id="searchInput" placeholder="Search by User Name">
+      </form>
+    </section>
+    <section>
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>User Name</th>
+            <th>Task Number</th>
+            <th>Task Description</th>
+            <th>Task Status</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th class="actions-header">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="taskTableBody">
+          <!-- Task rows will be dynamically generated here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

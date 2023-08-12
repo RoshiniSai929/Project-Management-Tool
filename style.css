@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #35424a;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+  padding: 10px;
+  width: calc(33.33% - 10px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#searchInput {
+  width: 90%;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid black; 
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid black; /* Add border to the table cells */
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #d0e9fa;
+}
+.actions-header {
+  min-width: 300px; /* Adjust the width as needed */
+}
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+#userNameInput,
+#taskNumberInput,
+#taskDescriptionInput {
+  width: 100%;
+  max-width: 600px;
+}
+
